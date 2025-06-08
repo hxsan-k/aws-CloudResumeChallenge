@@ -1,4 +1,4 @@
-# Cloud Resume Challenge 🌥️
+# AWS Cloud Resume Challenge 🌥️
 
 This repository contains my version of the Cloud Resume Challenge where I used a range of tools and AWS services to build and deploy a personal CV website.
 
