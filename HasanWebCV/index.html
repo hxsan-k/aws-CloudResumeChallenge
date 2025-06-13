@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Hasan Kamran's Cloud CV</title>
+  <style>
+    :root {
+      --bg: #f9f9f9;
+      --text: #222;
+      --card: #fff;
+      --link: #0A66C2;
+      --accent: #2c3e50;
+      --border: #1f2c34;
+    }
+
+    body.dark {
+      --bg: #121212;
+      --text: #ddd;
+      --card: #1e1e1e;
+      --link: #4ecdc4;
+      --accent: #4ecdc4;
+      --border: #162023;
+    }
+
+    *, *::before, *::after {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.5;
+      padding: 40px;
+    }
+
+    a {
+      color: var(--link);
+      text-decoration: underline;
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      background: var(--card);
+      padding: 12px 24px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    nav a {
+      margin-right: 16px;
+      font-weight: bold;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 32px;
+      background: var(--card);
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      border-radius: 8px;
+    }
+
+    section {
+      margin-top: 24px;
+    }
+
+    h1 {
+      font-size: 30px;
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      font-size: 22px;
+      margin-bottom: 10px;
+      color: var(--accent);
+    }
+
+    .contact {
+      font-size: 14px;
+      margin-bottom: 12px;
+    }
+
+    ul {
+      padding-left: 20px;
+      margin-bottom: 12px;
+    }
+
+    .job ul {
+      margin-bottom: 0;
+    }
+
+    .job {
+      background: var(--card);
+      padding: 6px;
+      margin-bottom: 5px;
+      border-radius: 2px;
+      box-shadow: 0 0px 0px rgba(0,0,0,0.08);
+    }
+
+    hr {
+      border: 0;
+      border-top: 1px solid var(--accent);
+      margin: 24px 0;
+    }
+
+    #education p {
+      margin-bottom: 12px;
+    }
+
+    #projects ul li {
+      margin-bottom: 16px;
+    }
+
+    #darkToggle {
+      background: none;
+      border: 1px solid var(--accent);
+      padding: 5px 10px;
+      border-radius: 5px;
+      cursor: pointer;
+      color: var(--text);
+      font-size: 14px;
+    }
+
+    .cursor {
+      display: inline-block;
+      color: var(--accent);
+      animation: blink 1s steps(2, start) infinite;
+      font-weight: bold;
+    }
+
+    @keyframes blink {
+      to { visibility: hidden; }
+    }
+
+    .education-entry {
+      margin-bottom: 12px;
+    }
+
+    .education-entry h4 {
+      margin-bottom: 2px;
+    }
+
+    .cert-table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+
+    .cert-table th,
+    .cert-table td {
+      text-align: left;
+      vertical-align: top;
+      padding: 6px 8px;
+      border: none;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="#profile">Profile</a>
+      <a href="#certifications">Certifications</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#experience">Experience</a>
+      <a href="#education">Education</a>
+    </nav>
+      <p style="font-weight: bold; font-size: 1.1em;">
+  👁️ Page Views: <span id="view-count">Loading...</span>
+    </p>
+    <button id="darkToggle">🌙</button>
+  </header>
+
+  <div class="container">
+
+    <h1><span id="typingText"></span><span class="cursor">|</span></h1>
+
+    <div class="contact">
+      <strong>Location:</strong> Glasgow, UK, G41<br>
+      <strong>Mobile:</strong> 07411 977442<br>
+      <strong>Email:</strong> <a href="mailto:hasan8812011@hotmail.co.uk">hasan8812011@hotmail.co.uk</a><br>
+      <strong>LinkedIn Profile:</strong> <a href="https://www.linkedin.com/in/hasankamran1/" target="_blank">View</a><br>
+    </div>
+
+    <section id="profile">
+      <h2>Profile Summary</h2>
+      <p>Proactive Cloud and IT Support professional with a strong foundation in customer service and technical troubleshooting. Certified AWS Solutions Architect – Associate and Microsoft Azure Administrator with hands-on experience deploying secure, resilient solutions across cloud and hybrid environments. Skilled in core AWS and Azure services, Linux CLI tasks, and networking concepts including DNS, TCP/IP, and VPN. Committed to continuous learning and contributing to collaborative environments that foster technical growth.</p>
+    </section>
+
+    <hr>
+
+    <section id="certifications">
+      <h2>Certifications</h2>
+      <ul>
+        <li>AWS Certified Solutions Architect – Associate</li>
+        <li>Microsoft Certified: Azure Administrator (AZ-104)</li>
+        <li>AWS Certified Cloud Practitioner</li>
+        <li>Microsoft Certified: Security, Compliance, and Identity Fundamentals (SC-900)</li>
+      </ul>
+    </section>
+
+    <hr>
+
+    <section id="skills">
+      <h2>Technical Skills</h2>
+      <ul>
+        <li><strong>Cloud Platforms:</strong> AWS (S3, IAM, Lambda, EC2, CloudWatch), Azure (Entra ID, VMs, Storage, Azure Monitor)</li>
+        <li><strong>Networking:</strong> DNS, TCP/IP, VPN Fundamentals</li>
+        <li><strong>Operating Systems:</strong> Linux (CLI tasks, file system navigation), Windows</li>
+        <li><strong>Tools & Technologies:</strong> AWS CLI, Azure Cloud Shell, Linux Shell, Python (basic scripting and ML), HTML</li>
+        <li><strong>Soft Skills:</strong> Critical Thinking, Problem Solving, Adaptability, Self-Motivation</li>
+      </ul>
+    </section>
+
+    <hr>
+
+    <section id="projects">
+      <h2>Key Cloud & Data Projects</h2>
+        <strong>Exponent Calculator Web App (AWS)</strong><br>
+        Built a serverless web app using AWS Amplify for frontend hosting, Lambda for backend logic, and DynamoDB for persistent data storage.<br> 
+        <a href="https://www.linkedin.com/feed/update/urn:li:activity:7243902979290935296/" target="_blank">View Project</a><br><br>
+
+        <strong>S3 Multi-Region Access Points Implementation</strong><br>
+        Configured and tested cross-region data access through AWS S3 Multi-Region Access Points using latency-based routing to optimise performance.<br> 
+        <a href="https://www.linkedin.com/feed/update/urn:li:activity:7254781937922314243/" target="_blank">View Project</a><br><br>
+
+        <strong>Explored Linux CLI with OverTheWire: Bandit</strong><br>
+        Navigated Linux file systems, managed permissions, and solved security-based challenges while building practical experience with core Linux commands.<br>
+        <a href="https://www.linkedin.com/posts/hasankamran1_%F0%9D%98%A4%F0%9D%98%A5-%F0%9D%98%89%F0%9D%98%A2%F0%9D%98%A4%F0%9D%98%AC-%F0%9D%98%B5%F0%9D%98%B0-%F0%9D%98%89%F0%9D%98%A2%F0%9D%98%B4%F0%9D%98%AA%F0%9D%98%A4%F0%9D%98%B4-%F0%9D%98%93-activity-7325444221073612801-p9L7" target="_blank">View Project</a><br><br>
+
+        <strong>ICU Admission Prediction Model (Course Project)</strong><br>
+        Developed a Python-based ML model to predict ICU admissions from COVID-19 data using NHS public health datasets, Pandas, Seaborn, Linear Regression, and Random Forest Regression.<br> 
+        <a href="https://www.linkedin.com/in/hasankamran1/details/education/" target="_blank">View Project</a>
+    </section>
+
+    <hr>
+
+    <section id="experience">
+      <h2>Professional Experience</h2>
+      <div class="job">
+        <strong>Sales & Customer Advisor – O2 | Nov 2024 – Present</strong>
+        <ul>
+          <li>Guide customers through device features and solutions to common issues, increasing satisfaction and ensuring technical clarity.</li>
+          <li>Manage customer contracts and billing via CRM tools, ensuring account integrity and data security.</li>
+          <li>Resolve frequent technical issues, strengthening troubleshooting and problem-solving capabilities.</li>
+        </ul>
+      </div>
+
+      <div class="job">
+        <strong>Logistics, Technician Support – Amazon & Audi | Mar 2023 – Apr 2024</strong>
+        <ul>
+          <li>Supported Audi technicians during diagnostic inspections and mechanical repairs, sharpening my technical understanding and attention to detail.</li>
+          <li>Maintained timely and reliable delivery operations at Amazon, demonstrating adaptability while maintaining high customer service standards under pressure.</li>
+        </ul>
+      </div>
+
+      <div class="job">
+        <strong>Customer Service/Technical Support – O2 via Capita | May 2022 – Sep 2022</strong>
+        <ul>
+          <li>Delivered first-line support for mobile device issues, connectivity faults, and account queries.</li>
+          <li>Utilised multiple internal systems to efficiently troubleshoot and resolve issues, ensuring timely support delivery.</li>
+          <li>Escalated complex incidents in accordance with SLA and internal procedures.</li>
+        </ul>
+      </div>
+    </section>
+
+    <hr>
+
+    <section id="education">
+      <h2>Education</h2>
+      <div class="education-entry">
+        <h4>Robust IT Training | Apr 2024 – May 2024</h4>
+        <p>Professional Cloud Training Programme</p>
+        <ul>
+          <li>AWS Certified Solutions Architect – Associate</li>
+          <li>Microsoft Certified: Azure Administrator (AZ-104)</li>
+          <li>AWS Certified Cloud Practitioner</li>
+          <li>Microsoft Certified: Security, Compliance, and Identity Fundamentals (SC-900)</li>
+        </ul>
+      </div>
+
+      <div class="education-entry">
+        <h4>Clyde College Glasgow | Sep 2024 – Oct 2024</h4>
+        <p>SCQF Level 6 – Data Science & AI</p>
+      </div>
+
+      <div class="education-entry">
+        <h4>University of Glasgow | Nov 2020 – Mar 2022</h4>
+        <p>CertHE Civil Engineering Studies with Architecture (Merit)</p>
+      </div>
+    </section>
+  </div>
+
+  <script>
+    const toggle = document.getElementById("darkToggle");
+    toggle.addEventListener("click", () => {
+      document.body.classList.toggle("dark");
+      toggle.textContent = document.body.classList.contains("dark") ? "☀️" : "🌙";
+    });
+
+    const text = "Hasan Kamran | AWS & Azure Certified Cloud Support Professional";
+    const target = document.getElementById("typingText");
+    let i = 0;
+    function type() {
+      if (i < text.length) {
+        target.textContent += text.charAt(i);
+        i++;
+        setTimeout(type, 70);
+      }
+    }
+    window.onload = type;
+  </script>
+
+  <script>
+    fetch('https://ld7lbl8mdc.execute-api.us-east-1.amazonaws.com')
+      .then(response => response.json())
+      .then(data => {
+        document.getElementById('view-count').textContent = data.views;
+      })
+      .catch(error => {
+        console.error('Error fetching view count:', error);
+        document.getElementById('view-count').textContent = 'Error';
+      });
+  </script>
+</body>
+</html>
